@@ -4,13 +4,17 @@
 - Puedes unificar la experiencia de desarrollo en equipo teniendo ambientes replica de produccion que estan disponibles para trabajar en segundos.
 - No necesitas tener ni ruby ni rvm ni rbenv instalado en local dev machine.
 - Docker hace la magia para que todo se ejecute en el container, con las versiones correctas.
+- El proyecto fue construido usando:
+    * macOS 10.14.2
+    * Docker Desktop Version 2.0.0.0-mac81 (29211)
+    * git version 2.15.0 for macOS
 
 ## Reference
 [Dockerizing a Ruby on Rails Application](https://semaphoreci.com/community/tutorials/dockerizing-a-ruby-on-rails-application)
 
 ## Steps
 
-### Descargar el proyecto
+#### Descargar el proyecto
 Para que quedes con el proyecto en tu máquina, listo para iniciar edicion de codigo:
 
 ```$ docker run -it --rm -v "$PWD":/usr/src/app -w /usr/src/app rails:5 rails new --skip-bundle drkiq```
@@ -28,7 +32,7 @@ $ git add .
 $ git commit -m ‘initial commit’
 ```
 
-### Edit project’s files
+#### Edit project’s files
 
 - Gemfile
 - Use puma instead of unicorn
@@ -43,7 +47,7 @@ $ git commit -m ‘initial commit’
 - .drkiq.env
 - .gitignore (to ignore .drkiq.env file)
 
-### Dockerize Rails App
+#### Dockerize Rails App
 
 Add following files:
 
@@ -51,13 +55,13 @@ Add following files:
 - .dockerignore
 - Docker-compose.yml
 
-### Create Volumes for Postgres and Redis
+#### Create Volumes for Postgres and Redis
 ```
 $ docker volume create --name drkiq-postgres
 $ docker volume create --name drkiq-redis
 ```
 
-### Run everything
+#### Run everything
 ```
 $ docker-compose up > docker-compose-run-1.txt
 ```
@@ -72,15 +76,20 @@ drkiq_1     | URI::InvalidURIError: bad URI(is not URI?): tcp://0.0.0.0:0.0.0.0:
 **Solution:**
 Edit .drkiq.env file, remove 0.0.0.0 from the LISTEN_ON env var.
 
-An error is expected due to database has not been initialized yet:
+_ActiveRecord::NoDatabaseError_ is expected due to database has not been initialized yet.  Go to next step.
 
-### Initialize Database
+#### Initialize Database
 ```
 $ docker-compose run drkiq rake db:reset
 $ docker-compose run drkiq rake db:migrate
 ```
 
-### Run everything (again)
+#### Run everything (again)
 ```
 $ docker-compose up > docker-compose-run-2.txt
 ```
+
+## Testing it out
+On a browser, go o http://localhost:8000/.
+
+You should be greeted with the typical Rails introduction page.
