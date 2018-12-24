@@ -1,0 +1,116 @@
+Attaching to drkiq_redis_1, drkiq_postgres_1, drkiq_drkiq_1, drkiq_sidekiq_1
+[33mpostgres_1  |[0m LOG:  database system was interrupted; last known up at 2018-12-23 05:27:55 UTC
+[36mredis_1     |[0m 1:C 24 Dec 11:49:42.423 # Warning: no config file specified, using the default config. In order to specify a config file use redis-server /path/to/redis.conf
+[36mredis_1     |[0m                 _._                                                  
+[36mredis_1     |[0m            _.-``__ ''-._                                             
+[36mredis_1     |[0m       _.-``    `.  `_.  ''-._           Redis 3.0.5 (00000000/0) 64 bit
+[36mredis_1     |[0m   .-`` .-```.  ```\/    _.,_ ''-._                                   
+[36mredis_1     |[0m  (    '      ,       .-`  | `,    )     Running in standalone mode
+[36mredis_1     |[0m  |`-._`-...-` __...-.``-._|'` _.-'|     Port: 6379
+[36mredis_1     |[0m  |    `-._   `._    /     _.-'    |     PID: 1
+[36mredis_1     |[0m   `-._    `-._  `-./  _.-'    _.-'                                   
+[36mredis_1     |[0m  |`-._`-._    `-.__.-'    _.-'_.-'|                                  
+[36mredis_1     |[0m  |    `-._`-._        _.-'_.-'    |           http://redis.io        
+[36mredis_1     |[0m   `-._    `-._`-.__.-'_.-'    _.-'                                   
+[36mredis_1     |[0m  |`-._`-._    `-.__.-'    _.-'_.-'|                                  
+[36mredis_1     |[0m  |    `-._`-._        _.-'_.-'    |                                  
+[36mredis_1     |[0m   `-._    `-._`-.__.-'_.-'    _.-'                                   
+[36mredis_1     |[0m       `-._    `-.__.-'    _.-'                                       
+[36mredis_1     |[0m           `-._        _.-'                                           
+[36mredis_1     |[0m               `-.__.-'                                               
+[36mredis_1     |[0m 
+[36mredis_1     |[0m 1:M 24 Dec 11:49:42.425 # WARNING: The TCP backlog setting of 511 cannot be enforced because /proc/sys/net/core/somaxconn is set to the lower value of 128.
+[36mredis_1     |[0m 1:M 24 Dec 11:49:42.425 # Server started, Redis version 3.0.5
+[36mredis_1     |[0m 1:M 24 Dec 11:49:42.425 # WARNING you have Transparent Huge Pages (THP) support enabled in your kernel. This will create latency and memory usage issues with Redis. To fix this issue run the command 'echo never > /sys/kernel/mm/transparent_hugepage/enabled' as root, and add it to your /etc/rc.local in order to retain the setting after a reboot. Redis must be restarted after THP is disabled.
+[36mredis_1     |[0m 1:M 24 Dec 11:49:42.425 * DB loaded from disk: 0.000 seconds
+[36mredis_1     |[0m 1:M 24 Dec 11:49:42.425 * The server is now ready to accept connections on port 6379
+[33mpostgres_1  |[0m LOG:  database system was not properly shut down; automatic recovery in progress
+[33mpostgres_1  |[0m LOG:  record with zero length at 0/16A8AB8
+[33mpostgres_1  |[0m LOG:  redo is not required
+[33mpostgres_1  |[0m LOG:  MultiXact member wraparound protections are now enabled
+[33mpostgres_1  |[0m LOG:  database system is ready to accept connections
+[33mpostgres_1  |[0m LOG:  autovacuum launcher started
+[32mdrkiq_1     |[0m [6] Puma starting in cluster mode...
+[32mdrkiq_1     |[0m [6] * Version 3.12.0 (ruby 2.5.1-p57), codename: Llamas in Pajamas
+[32mdrkiq_1     |[0m [6] * Min threads: 5, max threads: 5
+[32mdrkiq_1     |[0m [6] * Environment: development
+[32mdrkiq_1     |[0m [6] * Process workers: 1
+[32mdrkiq_1     |[0m [6] * Preloading application
+[35msidekiq_1   |[0m 2018-12-24T11:49:45.976Z 1 TID-go1j4hxx9 INFO: Booting Sidekiq 5.2.3 with redis options {:url=>"redis://redis:6379/0", :id=>"Sidekiq-server-PID-1"}
+[32mdrkiq_1     |[0m [6] * Listening on tcp://0.0.0.0:8000
+[32mdrkiq_1     |[0m [6] ! WARNING: Detected 4 Thread(s) started in app boot:
+[32mdrkiq_1     |[0m [6] ! #<Thread:0x000056403f2edb98@/usr/local/bundle/gems/listen-3.1.5/lib/listen/internals/thread_pool.rb:6 sleep> - /usr/local/bundle/gems/rb-inotify-0.10.0/lib/rb-inotify/notifier.rb:306:in `select'
+[32mdrkiq_1     |[0m [6] ! #<Thread:0x000056403f2ed990@/usr/local/bundle/gems/listen-3.1.5/lib/listen/internals/thread_pool.rb:6 sleep> - /usr/local/bundle/gems/listen-3.1.5/lib/listen/event/config.rb:19:in `sleep'
+[32mdrkiq_1     |[0m [6] ! #<Thread:0x000056403f4fdeb0@/usr/local/bundle/gems/listen-3.1.5/lib/listen/internals/thread_pool.rb:6 sleep> - /usr/local/bundle/gems/listen-3.1.5/lib/listen/record/entry.rb:42:in `realpath'
+[32mdrkiq_1     |[0m [6] ! #<Thread:0x000056403f4fdcd0@/usr/local/bundle/gems/listen-3.1.5/lib/listen/internals/thread_pool.rb:6 sleep> - /usr/local/bundle/gems/listen-3.1.5/lib/listen/event/config.rb:19:in `sleep'
+[32mdrkiq_1     |[0m [6] Use Ctrl-C to stop
+[32mdrkiq_1     |[0m [6] - Worker 0 (pid: 15) booted, phase: 0
+[35msidekiq_1   |[0m 2018-12-24T11:49:46.621Z 1 TID-go1j4hxx9 INFO: Running in ruby 2.5.1p57 (2018-03-29 revision 63029) [x86_64-linux]
+[35msidekiq_1   |[0m 2018-12-24T11:49:46.621Z 1 TID-go1j4hxx9 INFO: See LICENSE and the LGPL-3.0 for licensing details.
+[35msidekiq_1   |[0m 2018-12-24T11:49:46.621Z 1 TID-go1j4hxx9 INFO: Upgrade to Sidekiq Pro for more features and support: http://sidekiq.org
+[35msidekiq_1   |[0m 2018-12-24T11:49:46.626Z 1 TID-go1j4hxx9 INFO: Starting processing, hit Ctrl-C to stop
+[32mdrkiq_1     |[0m [fcd81751-370e-4ffa-8362-256f2e8c24e8] Started GET "/" for 172.17.0.1 at 2018-12-24 11:52:53 +0000
+[32mdrkiq_1     |[0m [fcd81751-370e-4ffa-8362-256f2e8c24e8] Cannot render console from 172.17.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+[33mpostgres_1  |[0m FATAL:  database "drkiq_development" does not exist
+[32mdrkiq_1     |[0m [fcd81751-370e-4ffa-8362-256f2e8c24e8]   
+[32mdrkiq_1     |[0m [fcd81751-370e-4ffa-8362-256f2e8c24e8] ActiveRecord::NoDatabaseError (FATAL:  database "drkiq_development" does not exist
+[32mdrkiq_1     |[0m ):
+[32mdrkiq_1     |[0m [fcd81751-370e-4ffa-8362-256f2e8c24e8]   
+[32mdrkiq_1     |[0m [fcd81751-370e-4ffa-8362-256f2e8c24e8] activerecord (5.0.7.1) lib/active_record/connection_adapters/postgresql_adapter.rb:677:in `rescue in connect'
+[32mdrkiq_1     |[0m [fcd81751-370e-4ffa-8362-256f2e8c24e8] activerecord (5.0.7.1) lib/active_record/connection_adapters/postgresql_adapter.rb:672:in `connect'
+[32mdrkiq_1     |[0m [fcd81751-370e-4ffa-8362-256f2e8c24e8] activerecord (5.0.7.1) lib/active_record/connection_adapters/postgresql_adapter.rb:217:in `initialize'
+[32mdrkiq_1     |[0m [fcd81751-370e-4ffa-8362-256f2e8c24e8] activerecord (5.0.7.1) lib/active_record/connection_adapters/postgresql_adapter.rb:37:in `new'
+[32mdrkiq_1     |[0m [fcd81751-370e-4ffa-8362-256f2e8c24e8] activerecord (5.0.7.1) lib/active_record/connection_adapters/postgresql_adapter.rb:37:in `postgresql_connection'
+[32mdrkiq_1     |[0m [fcd81751-370e-4ffa-8362-256f2e8c24e8] activerecord (5.0.7.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:729:in `new_connection'
+[32mdrkiq_1     |[0m [fcd81751-370e-4ffa-8362-256f2e8c24e8] activerecord (5.0.7.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:773:in `checkout_new_connection'
+[32mdrkiq_1     |[0m [fcd81751-370e-4ffa-8362-256f2e8c24e8] activerecord (5.0.7.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:752:in `try_to_checkout_new_connection'
+[32mdrkiq_1     |[0m [fcd81751-370e-4ffa-8362-256f2e8c24e8] activerecord (5.0.7.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:713:in `acquire_connection'
+[32mdrkiq_1     |[0m [fcd81751-370e-4ffa-8362-256f2e8c24e8] activerecord (5.0.7.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:490:in `checkout'
+[32mdrkiq_1     |[0m [fcd81751-370e-4ffa-8362-256f2e8c24e8] activerecord (5.0.7.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:364:in `connection'
+[32mdrkiq_1     |[0m [fcd81751-370e-4ffa-8362-256f2e8c24e8] activerecord (5.0.7.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:883:in `retrieve_connection'
+[32mdrkiq_1     |[0m [fcd81751-370e-4ffa-8362-256f2e8c24e8] activerecord (5.0.7.1) lib/active_record/connection_handling.rb:128:in `retrieve_connection'
+[32mdrkiq_1     |[0m [fcd81751-370e-4ffa-8362-256f2e8c24e8] activerecord (5.0.7.1) lib/active_record/connection_handling.rb:91:in `connection'
+[32mdrkiq_1     |[0m [fcd81751-370e-4ffa-8362-256f2e8c24e8] activerecord (5.0.7.1) lib/active_record/migration.rb:559:in `connection'
+[32mdrkiq_1     |[0m [fcd81751-370e-4ffa-8362-256f2e8c24e8] activerecord (5.0.7.1) lib/active_record/migration.rb:546:in `call'
+[32mdrkiq_1     |[0m [fcd81751-370e-4ffa-8362-256f2e8c24e8] actionpack (5.0.7.1) lib/action_dispatch/middleware/callbacks.rb:38:in `block in call'
+[32mdrkiq_1     |[0m [fcd81751-370e-4ffa-8362-256f2e8c24e8] activesupport (5.0.7.1) lib/active_support/callbacks.rb:97:in `__run_callbacks__'
+[32mdrkiq_1     |[0m [fcd81751-370e-4ffa-8362-256f2e8c24e8] activesupport (5.0.7.1) lib/active_support/callbacks.rb:750:in `_run_call_callbacks'
+[32mdrkiq_1     |[0m [fcd81751-370e-4ffa-8362-256f2e8c24e8] activesupport (5.0.7.1) lib/active_support/callbacks.rb:90:in `run_callbacks'
+[32mdrkiq_1     |[0m [fcd81751-370e-4ffa-8362-256f2e8c24e8] actionpack (5.0.7.1) lib/action_dispatch/middleware/callbacks.rb:36:in `call'
+[32mdrkiq_1     |[0m [fcd81751-370e-4ffa-8362-256f2e8c24e8] actionpack (5.0.7.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+[32mdrkiq_1     |[0m [fcd81751-370e-4ffa-8362-256f2e8c24e8] actionpack (5.0.7.1) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+[32mdrkiq_1     |[0m [fcd81751-370e-4ffa-8362-256f2e8c24e8] actionpack (5.0.7.1) lib/action_dispatch/middleware/debug_exceptions.rb:49:in `call'
+[32mdrkiq_1     |[0m [fcd81751-370e-4ffa-8362-256f2e8c24e8] web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+[32mdrkiq_1     |[0m [fcd81751-370e-4ffa-8362-256f2e8c24e8] web-console (3.7.0) lib/web_console/middleware.rb:22:in `block in call'
+[32mdrkiq_1     |[0m [fcd81751-370e-4ffa-8362-256f2e8c24e8] web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+[32mdrkiq_1     |[0m [fcd81751-370e-4ffa-8362-256f2e8c24e8] web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+[32mdrkiq_1     |[0m [fcd81751-370e-4ffa-8362-256f2e8c24e8] actionpack (5.0.7.1) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+[32mdrkiq_1     |[0m [fcd81751-370e-4ffa-8362-256f2e8c24e8] railties (5.0.7.1) lib/rails/rack/logger.rb:36:in `call_app'
+[32mdrkiq_1     |[0m [fcd81751-370e-4ffa-8362-256f2e8c24e8] railties (5.0.7.1) lib/rails/rack/logger.rb:24:in `block in call'
+[32mdrkiq_1     |[0m [fcd81751-370e-4ffa-8362-256f2e8c24e8] activesupport (5.0.7.1) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+[32mdrkiq_1     |[0m [fcd81751-370e-4ffa-8362-256f2e8c24e8] activesupport (5.0.7.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+[32mdrkiq_1     |[0m [fcd81751-370e-4ffa-8362-256f2e8c24e8] activesupport (5.0.7.1) lib/active_support/tagged_logging.rb:69:in `tagged'
+[32mdrkiq_1     |[0m [fcd81751-370e-4ffa-8362-256f2e8c24e8] railties (5.0.7.1) lib/rails/rack/logger.rb:24:in `call'
+[32mdrkiq_1     |[0m [fcd81751-370e-4ffa-8362-256f2e8c24e8] sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+[32mdrkiq_1     |[0m [fcd81751-370e-4ffa-8362-256f2e8c24e8] actionpack (5.0.7.1) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+[32mdrkiq_1     |[0m [fcd81751-370e-4ffa-8362-256f2e8c24e8] rack (2.0.6) lib/rack/method_override.rb:22:in `call'
+[32mdrkiq_1     |[0m [fcd81751-370e-4ffa-8362-256f2e8c24e8] rack (2.0.6) lib/rack/runtime.rb:22:in `call'
+[32mdrkiq_1     |[0m [fcd81751-370e-4ffa-8362-256f2e8c24e8] activesupport (5.0.7.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+[32mdrkiq_1     |[0m [fcd81751-370e-4ffa-8362-256f2e8c24e8] actionpack (5.0.7.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+[32mdrkiq_1     |[0m [fcd81751-370e-4ffa-8362-256f2e8c24e8] actionpack (5.0.7.1) lib/action_dispatch/middleware/static.rb:136:in `call'
+[32mdrkiq_1     |[0m [fcd81751-370e-4ffa-8362-256f2e8c24e8] rack (2.0.6) lib/rack/sendfile.rb:111:in `call'
+[32mdrkiq_1     |[0m [fcd81751-370e-4ffa-8362-256f2e8c24e8] railties (5.0.7.1) lib/rails/engine.rb:522:in `call'
+[32mdrkiq_1     |[0m [fcd81751-370e-4ffa-8362-256f2e8c24e8] puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+[32mdrkiq_1     |[0m [fcd81751-370e-4ffa-8362-256f2e8c24e8] puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+[32mdrkiq_1     |[0m [fcd81751-370e-4ffa-8362-256f2e8c24e8] puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+[32mdrkiq_1     |[0m [fcd81751-370e-4ffa-8362-256f2e8c24e8] puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+[32mdrkiq_1     |[0m [fcd81751-370e-4ffa-8362-256f2e8c24e8] puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+[32mdrkiq_1     |[0m [fcd81751-370e-4ffa-8362-256f2e8c24e8]   Rendering /usr/local/bundle/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+[32mdrkiq_1     |[0m [fcd81751-370e-4ffa-8362-256f2e8c24e8]   Rendering /usr/local/bundle/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+[32mdrkiq_1     |[0m [fcd81751-370e-4ffa-8362-256f2e8c24e8]   Rendered /usr/local/bundle/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (5.8ms)
+[32mdrkiq_1     |[0m [fcd81751-370e-4ffa-8362-256f2e8c24e8]   Rendering /usr/local/bundle/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+[32mdrkiq_1     |[0m [fcd81751-370e-4ffa-8362-256f2e8c24e8]   Rendered /usr/local/bundle/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.9ms)
+[32mdrkiq_1     |[0m [fcd81751-370e-4ffa-8362-256f2e8c24e8]   Rendering /usr/local/bundle/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+[32mdrkiq_1     |[0m [fcd81751-370e-4ffa-8362-256f2e8c24e8]   Rendered /usr/local/bundle/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.3ms)
+[32mdrkiq_1     |[0m [fcd81751-370e-4ffa-8362-256f2e8c24e8]   Rendered /usr/local/bundle/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (55.9ms)
+Gracefully stopping... (press Ctrl+C again to force)
