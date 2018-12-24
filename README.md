@@ -4,13 +4,17 @@
 - Puedes unificar la experiencia de desarrollo en equipo teniendo ambientes replica de produccion que estan disponibles para trabajar en segundos.
 - No necesitas tener ni ruby ni rvm ni rbenv instalado en local dev machine.
 - Docker hace la magia para que todo se ejecute en el container, con las versiones correctas.
-- El proyecto fue construido usando:
-    * macOS 10.14.2
-    * Docker Desktop Version 2.0.0.0-mac81 (29211)
-    * git version 2.15.0 for macOS
+- Los cambios hechos en local dev machine se actualizan en el Docker container de manera transparente.
 
 ## Reference
 [Dockerizing a Ruby on Rails Application](https://semaphoreci.com/community/tutorials/dockerizing-a-ruby-on-rails-application)
+
+## Requirements
+El proyecto fue construido usando:
+
+  * macOS 10.14.2
+  * Docker Desktop Version 2.0.0.0-mac81 (29211)
+  * git version 2.15.0 for macOS
 
 ## Steps
 
