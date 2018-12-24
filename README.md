@@ -4,7 +4,7 @@
 - Puedes unificar la experiencia de desarrollo en equipo teniendo ambientes replica de produccion que estan disponibles para trabajar en segundos.
 - No necesitas tener ni ruby ni rvm ni rbenv instalado en local dev machine.
 - Docker hace la magia para que todo se ejecute en el container, con las versiones correctas.
-- Los cambios hechos en local dev machine se actualizan en el Docker container de manera transparente.
+- Los cambios hechos en local dev machine se actualizan en el Docker container de manera transparente, sin necesidad de reiniciar ningun servicio.
 
 ## Reference
 [Dockerizing a Ruby on Rails Application](https://semaphoreci.com/community/tutorials/dockerizing-a-ruby-on-rails-application)
@@ -97,3 +97,9 @@ $ docker-compose up > docker-compose-run-2.txt
 On a browser, go o http://localhost:8000/.
 
 You should be greeted with the typical Rails introduction page.
+
+## Notes
+- To run Rails commands we need to prepend the following:
+
+```$ docker-­compose run drkiq rails [command, arguments and options]```
+
