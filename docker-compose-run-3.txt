@@ -1,0 +1,249 @@
+Attaching to drkiq_redis_1, drkiq_postgres_1, drkiq_drkiq_1, drkiq_sidekiq_1
+[33mpostgres_1  |[0m The files belonging to this database system will be owned by user "postgres".
+[33mpostgres_1  |[0m This user must also own the server process.
+[33mpostgres_1  |[0m 
+[33mpostgres_1  |[0m The database cluster will be initialized with locale "en_US.utf8".
+[33mpostgres_1  |[0m The default database encoding has accordingly been set to "UTF8".
+[33mpostgres_1  |[0m The default text search configuration will be set to "english".
+[33mpostgres_1  |[0m 
+[33mpostgres_1  |[0m Data page checksums are disabled.
+[33mpostgres_1  |[0m 
+[33mpostgres_1  |[0m fixing permissions on existing directory /var/lib/postgresql/data ... ok
+[33mpostgres_1  |[0m creating subdirectories ... ok
+[33mpostgres_1  |[0m selecting default max_connections ... 100
+[33mpostgres_1  |[0m selecting default shared_buffers ... 128MB
+[33mpostgres_1  |[0m selecting dynamic shared memory implementation ... posix
+[33mpostgres_1  |[0m creating configuration files ... ok
+[33mpostgres_1  |[0m creating template1 database in /var/lib/postgresql/data/base/1 ... ok
+[33mpostgres_1  |[0m initializing pg_authid ... ok
+[33mpostgres_1  |[0m initializing dependencies ... ok
+[33mpostgres_1  |[0m creating system views ... ok
+[33mpostgres_1  |[0m loading system objects' descriptions ... ok
+[33mpostgres_1  |[0m creating collations ... ok
+[33mpostgres_1  |[0m creating conversions ... ok
+[33mpostgres_1  |[0m creating dictionaries ... ok
+[33mpostgres_1  |[0m setting privileges on built-in objects ... ok
+[33mpostgres_1  |[0m creating information schema ... ok
+[33mpostgres_1  |[0m loading PL/pgSQL server-side language ... ok
+[33mpostgres_1  |[0m vacuuming database template1 ... ok
+[33mpostgres_1  |[0m copying template1 to template0 ... ok
+[33mpostgres_1  |[0m copying template1 to postgres ... ok
+[33mpostgres_1  |[0m syncing data to disk ... ok
+[33mpostgres_1  |[0m 
+[33mpostgres_1  |[0m Success. You can now start the database server using:
+[33mpostgres_1  |[0m 
+[33mpostgres_1  |[0m 
+[33mpostgres_1  |[0m WARNING: enabling "trust" authentication for local connections
+[33mpostgres_1  |[0m You can change this by editing pg_hba.conf or using the option -A, or
+[36mredis_1     |[0m 1:C 23 Dec 05:27:51.177 # Warning: no config file specified, using the default config. In order to specify a config file use redis-server /path/to/redis.conf
+[36mredis_1     |[0m                 _._                                                  
+[36mredis_1     |[0m            _.-``__ ''-._                                             
+[36mredis_1     |[0m       _.-``    `.  `_.  ''-._           Redis 3.0.5 (00000000/0) 64 bit
+[36mredis_1     |[0m   .-`` .-```.  ```\/    _.,_ ''-._                                   
+[36mredis_1     |[0m  (    '      ,       .-`  | `,    )     Running in standalone mode
+[36mredis_1     |[0m  |`-._`-...-` __...-.``-._|'` _.-'|     Port: 6379
+[36mredis_1     |[0m  |    `-._   `._    /     _.-'    |     PID: 1
+[36mredis_1     |[0m   `-._    `-._  `-./  _.-'    _.-'                                   
+[36mredis_1     |[0m  |`-._`-._    `-.__.-'    _.-'_.-'|                                  
+[36mredis_1     |[0m  |    `-._`-._        _.-'_.-'    |           http://redis.io        
+[36mredis_1     |[0m   `-._    `-._`-.__.-'_.-'    _.-'                                   
+[36mredis_1     |[0m  |`-._`-._    `-.__.-'    _.-'_.-'|                                  
+[36mredis_1     |[0m  |    `-._`-._        _.-'_.-'    |                                  
+[36mredis_1     |[0m   `-._    `-._`-.__.-'_.-'    _.-'                                   
+[36mredis_1     |[0m       `-._    `-.__.-'    _.-'                                       
+[36mredis_1     |[0m           `-._        _.-'                                           
+[36mredis_1     |[0m               `-.__.-'                                               
+[36mredis_1     |[0m 
+[36mredis_1     |[0m 1:M 23 Dec 05:27:51.185 # WARNING: The TCP backlog setting of 511 cannot be enforced because /proc/sys/net/core/somaxconn is set to the lower value of 128.
+[36mredis_1     |[0m 1:M 23 Dec 05:27:51.185 # Server started, Redis version 3.0.5
+[36mredis_1     |[0m 1:M 23 Dec 05:27:51.185 # WARNING you have Transparent Huge Pages (THP) support enabled in your kernel. This will create latency and memory usage issues with Redis. To fix this issue run the command 'echo never > /sys/kernel/mm/transparent_hugepage/enabled' as root, and add it to your /etc/rc.local in order to retain the setting after a reboot. Redis must be restarted after THP is disabled.
+[36mredis_1     |[0m 1:M 23 Dec 05:27:51.185 * The server is now ready to accept connections on port 6379
+[36mredis_1     |[0m 1:M 24 Dec 11:29:52.370 * 1 changes in 3600 seconds. Saving...
+[36mredis_1     |[0m 1:M 24 Dec 11:29:52.371 * Background saving started by pid 10
+[36mredis_1     |[0m 10:C 24 Dec 11:29:52.383 * DB saved on disk
+[36mredis_1     |[0m 10:C 24 Dec 11:29:52.384 * RDB: 0 MB of memory used by copy-on-write
+[36mredis_1     |[0m 1:M 24 Dec 11:29:52.472 * Background saving terminated with success
+[36mredis_1     |[0m 1:C 24 Dec 11:49:42.423 # Warning: no config file specified, using the default config. In order to specify a config file use redis-server /path/to/redis.conf
+[36mredis_1     |[0m                 _._                                                  
+[36mredis_1     |[0m            _.-``__ ''-._                                             
+[36mredis_1     |[0m       _.-``    `.  `_.  ''-._           Redis 3.0.5 (00000000/0) 64 bit
+[36mredis_1     |[0m   .-`` .-```.  ```\/    _.,_ ''-._                                   
+[36mredis_1     |[0m  (    '      ,       .-`  | `,    )     Running in standalone mode
+[36mredis_1     |[0m  |`-._`-...-` __...-.``-._|'` _.-'|     Port: 6379
+[36mredis_1     |[0m  |    `-._   `._    /     _.-'    |     PID: 1
+[36mredis_1     |[0m   `-._    `-._  `-./  _.-'    _.-'                                   
+[36mredis_1     |[0m  |`-._`-._    `-.__.-'    _.-'_.-'|                                  
+[36mredis_1     |[0m  |    `-._`-._        _.-'_.-'    |           http://redis.io        
+[36mredis_1     |[0m   `-._    `-._`-.__.-'_.-'    _.-'                                   
+[36mredis_1     |[0m  |`-._`-._    `-.__.-'    _.-'_.-'|                                  
+[36mredis_1     |[0m  |    `-._`-._        _.-'_.-'    |                                  
+[36mredis_1     |[0m   `-._    `-._`-.__.-'_.-'    _.-'                                   
+[36mredis_1     |[0m       `-._    `-.__.-'    _.-'                                       
+[36mredis_1     |[0m           `-._        _.-'                                           
+[36mredis_1     |[0m               `-.__.-'                                               
+[36mredis_1     |[0m 
+[36mredis_1     |[0m 1:M 24 Dec 11:49:42.425 # WARNING: The TCP backlog setting of 511 cannot be enforced because /proc/sys/net/core/somaxconn is set to the lower value of 128.
+[36mredis_1     |[0m 1:M 24 Dec 11:49:42.425 # Server started, Redis version 3.0.5
+[36mredis_1     |[0m 1:M 24 Dec 11:49:42.425 # WARNING you have Transparent Huge Pages (THP) support enabled in your kernel. This will create latency and memory usage issues with Redis. To fix this issue run the command 'echo never > /sys/kernel/mm/transparent_hugepage/enabled' as root, and add it to your /etc/rc.local in order to retain the setting after a reboot. Redis must be restarted after THP is disabled.
+[36mredis_1     |[0m 1:M 24 Dec 11:49:42.425 * DB loaded from disk: 0.000 seconds
+[36mredis_1     |[0m 1:M 24 Dec 11:49:42.425 * The server is now ready to accept connections on port 6379
+[36mredis_1     |[0m 1:C 24 Dec 13:58:20.567 # Warning: no config file specified, using the default config. In order to specify a config file use redis-server /path/to/redis.conf
+[36mredis_1     |[0m                 _._                                                  
+[36mredis_1     |[0m            _.-``__ ''-._                                             
+[36mredis_1     |[0m       _.-``    `.  `_.  ''-._           Redis 3.0.5 (00000000/0) 64 bit
+[36mredis_1     |[0m   .-`` .-```.  ```\/    _.,_ ''-._                                   
+[36mredis_1     |[0m  (    '      ,       .-`  | `,    )     Running in standalone mode
+[36mredis_1     |[0m  |`-._`-...-` __...-.``-._|'` _.-'|     Port: 6379
+[36mredis_1     |[0m  |    `-._   `._    /     _.-'    |     PID: 1
+[36mredis_1     |[0m   `-._    `-._  `-./  _.-'    _.-'                                   
+[36mredis_1     |[0m  |`-._`-._    `-.__.-'    _.-'_.-'|                                  
+[36mredis_1     |[0m  |    `-._`-._        _.-'_.-'    |           http://redis.io        
+[36mredis_1     |[0m   `-._    `-._`-.__.-'_.-'    _.-'                                   
+[36mredis_1     |[0m  |`-._`-._    `-.__.-'    _.-'_.-'|                                  
+[36mredis_1     |[0m  |    `-._`-._        _.-'_.-'    |                                  
+[36mredis_1     |[0m   `-._    `-._`-.__.-'_.-'    _.-'                                   
+[36mredis_1     |[0m       `-._    `-.__.-'    _.-'                                       
+[36mredis_1     |[0m           `-._        _.-'                                           
+[33mpostgres_1  |[0m --auth-local and --auth-host, the next time you run initdb.
+[33mpostgres_1  |[0m     postgres -D /var/lib/postgresql/data
+[33mpostgres_1  |[0m or
+[33mpostgres_1  |[0m     pg_ctl -D /var/lib/postgresql/data -l logfile start
+[33mpostgres_1  |[0m 
+[33mpostgres_1  |[0m waiting for server to start....LOG:  database system was shut down at 2018-12-23 05:27:52 UTC
+[33mpostgres_1  |[0m LOG:  MultiXact member wraparound protections are now enabled
+[33mpostgres_1  |[0m LOG:  database system is ready to accept connections
+[33mpostgres_1  |[0m LOG:  autovacuum launcher started
+[33mpostgres_1  |[0m  done
+[33mpostgres_1  |[0m server started
+[33mpostgres_1  |[0m CREATE DATABASE
+[33mpostgres_1  |[0m 
+[33mpostgres_1  |[0m CREATE ROLE
+[33mpostgres_1  |[0m 
+[33mpostgres_1  |[0m 
+[33mpostgres_1  |[0m /docker-entrypoint.sh: ignoring /docker-entrypoint-initdb.d/*
+[33mpostgres_1  |[0m 
+[33mpostgres_1  |[0m LOG:  received fast shutdown request
+[33mpostgres_1  |[0m LOG:  aborting any active transactions
+[33mpostgres_1  |[0m LOG:  autovacuum launcher shutting down
+[33mpostgres_1  |[0m waiting for server to shut down....LOG:  shutting down
+[33mpostgres_1  |[0m LOG:  database system is shut down
+[33mpostgres_1  |[0m  done
+[33mpostgres_1  |[0m server stopped
+[33mpostgres_1  |[0m 
+[33mpostgres_1  |[0m PostgreSQL init process complete; ready for start up.
+[33mpostgres_1  |[0m 
+[33mpostgres_1  |[0m LOG:  database system was shut down at 2018-12-23 05:27:54 UTC
+[33mpostgres_1  |[0m LOG:  MultiXact member wraparound protections are now enabled
+[33mpostgres_1  |[0m LOG:  database system is ready to accept connections
+[33mpostgres_1  |[0m LOG:  autovacuum launcher started
+[33mpostgres_1  |[0m LOG:  database system was interrupted; last known up at 2018-12-23 05:27:55 UTC
+[33mpostgres_1  |[0m LOG:  database system was not properly shut down; automatic recovery in progress
+[33mpostgres_1  |[0m LOG:  record with zero length at 0/16A8AB8
+[33mpostgres_1  |[0m LOG:  redo is not required
+[33mpostgres_1  |[0m LOG:  MultiXact member wraparound protections are now enabled
+[33mpostgres_1  |[0m LOG:  database system is ready to accept connections
+[33mpostgres_1  |[0m LOG:  autovacuum launcher started
+[33mpostgres_1  |[0m FATAL:  database "drkiq_development" does not exist
+[33mpostgres_1  |[0m LOG:  database system was interrupted; last known up at 2018-12-24 11:49:43 UTC
+[33mpostgres_1  |[0m LOG:  database system was not properly shut down; automatic recovery in progress
+[33mpostgres_1  |[0m LOG:  record with zero length at 0/16A8B20
+[33mpostgres_1  |[0m LOG:  redo is not required
+[33mpostgres_1  |[0m LOG:  MultiXact member wraparound protections are now enabled
+[33mpostgres_1  |[0m LOG:  database system is ready to accept connections
+[33mpostgres_1  |[0m LOG:  autovacuum launcher started
+[33mpostgres_1  |[0m FATAL:  database "drkiq_development" does not exist
+[36mredis_1     |[0m               `-.__.-'                                               
+[36mredis_1     |[0m 
+[36mredis_1     |[0m 1:M 24 Dec 13:58:20.568 # WARNING: The TCP backlog setting of 511 cannot be enforced because /proc/sys/net/core/somaxconn is set to the lower value of 128.
+[36mredis_1     |[0m 1:M 24 Dec 13:58:20.568 # Server started, Redis version 3.0.5
+[36mredis_1     |[0m 1:M 24 Dec 13:58:20.568 # WARNING you have Transparent Huge Pages (THP) support enabled in your kernel. This will create latency and memory usage issues with Redis. To fix this issue run the command 'echo never > /sys/kernel/mm/transparent_hugepage/enabled' as root, and add it to your /etc/rc.local in order to retain the setting after a reboot. Redis must be restarted after THP is disabled.
+[36mredis_1     |[0m 1:M 24 Dec 13:58:20.568 * DB loaded from disk: 0.000 seconds
+[36mredis_1     |[0m 1:M 24 Dec 13:58:20.568 * The server is now ready to accept connections on port 6379
+[32mdrkiq_1     |[0m [6] Puma starting in cluster mode...
+[32mdrkiq_1     |[0m [6] * Version 3.12.0 (ruby 2.5.1-p57), codename: Llamas in Pajamas
+[32mdrkiq_1     |[0m [6] * Min threads: 5, max threads: 5
+[32mdrkiq_1     |[0m [6] * Environment: development
+[32mdrkiq_1     |[0m [6] * Process workers: 1
+[32mdrkiq_1     |[0m [6] * Preloading application
+[35msidekiq_1   |[0m 2018-12-24T14:00:13.760Z 1 TID-gnyltyj1t INFO: Booting Sidekiq 5.2.3 with redis options {:url=>"redis://redis:6379/0", :id=>"Sidekiq-server-PID-1"}
+[35msidekiq_1   |[0m 2018-12-24T14:00:14.379Z 1 TID-gnyltyj1t INFO: Running in ruby 2.5.1p57 (2018-03-29 revision 63029) [x86_64-linux]
+[35msidekiq_1   |[0m 2018-12-24T14:00:14.380Z 1 TID-gnyltyj1t INFO: See LICENSE and the LGPL-3.0 for licensing details.
+[35msidekiq_1   |[0m 2018-12-24T14:00:14.382Z 1 TID-gnyltyj1t INFO: Upgrade to Sidekiq Pro for more features and support: http://sidekiq.org
+[35msidekiq_1   |[0m 2018-12-24T14:00:14.390Z 1 TID-gnyltyj1t INFO: Starting processing, hit Ctrl-C to stop
+[32mdrkiq_1     |[0m [6] * Listening on tcp://0.0.0.0:8000
+[32mdrkiq_1     |[0m [6] ! WARNING: Detected 4 Thread(s) started in app boot:
+[32mdrkiq_1     |[0m [6] ! #<Thread:0x000055b4563d9ec8@/usr/local/bundle/gems/listen-3.1.5/lib/listen/internals/thread_pool.rb:6 sleep> - /usr/local/bundle/gems/rb-inotify-0.10.0/lib/rb-inotify/notifier.rb:306:in `select'
+[32mdrkiq_1     |[0m [6] ! #<Thread:0x000055b4563d9c70@/usr/local/bundle/gems/listen-3.1.5/lib/listen/internals/thread_pool.rb:6 sleep> - /usr/local/bundle/gems/listen-3.1.5/lib/listen/event/config.rb:19:in `sleep'
+[32mdrkiq_1     |[0m [6] ! #<Thread:0x000055b456184178@/usr/local/bundle/gems/listen-3.1.5/lib/listen/internals/thread_pool.rb:6 sleep> - /usr/local/bundle/gems/listen-3.1.5/lib/listen/record/entry.rb:53:in `open'
+[32mdrkiq_1     |[0m [6] ! #<Thread:0x000055b4561876c0@/usr/local/bundle/gems/listen-3.1.5/lib/listen/internals/thread_pool.rb:6 sleep> - /usr/local/bundle/gems/listen-3.1.5/lib/listen/event/config.rb:19:in `sleep'
+[32mdrkiq_1     |[0m [6] Use Ctrl-C to stop
+[32mdrkiq_1     |[0m [6] - Worker 0 (pid: 15) booted, phase: 0
+[32mdrkiq_1     |[0m [5cbfcec3-b0d6-41fc-8f2a-633c4e03bc91] Started GET "/" for 172.17.0.1 at 2018-12-24 14:00:25 +0000
+[32mdrkiq_1     |[0m [5cbfcec3-b0d6-41fc-8f2a-633c4e03bc91] Cannot render console from 172.17.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+[32mdrkiq_1     |[0m [5cbfcec3-b0d6-41fc-8f2a-633c4e03bc91] Processing by Rails::WelcomeController#index as HTML
+[32mdrkiq_1     |[0m [5cbfcec3-b0d6-41fc-8f2a-633c4e03bc91]   Parameters: {"internal"=>true}
+[32mdrkiq_1     |[0m [5cbfcec3-b0d6-41fc-8f2a-633c4e03bc91]   Rendering /usr/local/bundle/gems/railties-5.0.7.1/lib/rails/templates/rails/welcome/index.html.erb
+[32mdrkiq_1     |[0m [5cbfcec3-b0d6-41fc-8f2a-633c4e03bc91]   Rendered /usr/local/bundle/gems/railties-5.0.7.1/lib/rails/templates/rails/welcome/index.html.erb (13.6ms)
+[32mdrkiq_1     |[0m [5cbfcec3-b0d6-41fc-8f2a-633c4e03bc91] Completed 200 OK in 56ms (Views: 31.8ms | ActiveRecord: 0.0ms)
+[32mdrkiq_1     |[0m 
+[32mdrkiq_1     |[0m 
+[36mredis_1     |[0m 1:M 24 Dec 14:03:21.041 * 100 changes in 300 seconds. Saving...
+[36mredis_1     |[0m 1:M 24 Dec 14:03:21.041 * Background saving started by pid 10
+[36mredis_1     |[0m 10:C 24 Dec 14:03:21.053 * DB saved on disk
+[36mredis_1     |[0m 10:C 24 Dec 14:03:21.054 * RDB: 0 MB of memory used by copy-on-write
+[36mredis_1     |[0m 1:M 24 Dec 14:03:21.147 * Background saving terminated with success
+[36mredis_1     |[0m 1:M 24 Dec 14:08:22.051 * 100 changes in 300 seconds. Saving...
+[36mredis_1     |[0m 1:M 24 Dec 14:08:22.054 * Background saving started by pid 11
+[36mredis_1     |[0m 11:C 24 Dec 14:08:22.065 * DB saved on disk
+[36mredis_1     |[0m 11:C 24 Dec 14:08:22.066 * RDB: 0 MB of memory used by copy-on-write
+[36mredis_1     |[0m 1:M 24 Dec 14:08:22.156 * Background saving terminated with success
+[36mredis_1     |[0m 1:M 24 Dec 14:13:23.073 * 100 changes in 300 seconds. Saving...
+[36mredis_1     |[0m 1:M 24 Dec 14:13:23.073 * Background saving started by pid 12
+[36mredis_1     |[0m 12:C 24 Dec 14:13:23.086 * DB saved on disk
+[36mredis_1     |[0m 12:C 24 Dec 14:13:23.087 * RDB: 0 MB of memory used by copy-on-write
+[36mredis_1     |[0m 1:M 24 Dec 14:13:23.178 * Background saving terminated with success
+[36mredis_1     |[0m 1:M 24 Dec 14:18:24.087 * 100 changes in 300 seconds. Saving...
+[36mredis_1     |[0m 1:M 24 Dec 14:18:24.091 * Background saving started by pid 13
+[36mredis_1     |[0m 13:C 24 Dec 14:18:24.104 * DB saved on disk
+[36mredis_1     |[0m 13:C 24 Dec 14:18:24.104 * RDB: 0 MB of memory used by copy-on-write
+[36mredis_1     |[0m 1:M 24 Dec 14:18:24.194 * Background saving terminated with success
+[36mredis_1     |[0m 1:M 24 Dec 14:23:25.042 * 100 changes in 300 seconds. Saving...
+[36mredis_1     |[0m 1:M 24 Dec 14:23:25.043 * Background saving started by pid 14
+[36mredis_1     |[0m 14:C 24 Dec 14:23:25.058 * DB saved on disk
+[36mredis_1     |[0m 14:C 24 Dec 14:23:25.058 * RDB: 0 MB of memory used by copy-on-write
+[36mredis_1     |[0m 1:M 24 Dec 14:23:25.145 * Background saving terminated with success
+[36mredis_1     |[0m 1:M 24 Dec 14:28:26.103 * 100 changes in 300 seconds. Saving...
+[36mredis_1     |[0m 1:M 24 Dec 14:28:26.103 * Background saving started by pid 15
+[36mredis_1     |[0m 15:C 24 Dec 14:28:26.109 * DB saved on disk
+[36mredis_1     |[0m 15:C 24 Dec 14:28:26.110 * RDB: 0 MB of memory used by copy-on-write
+[36mredis_1     |[0m 1:M 24 Dec 14:28:26.205 * Background saving terminated with success
+[36mredis_1     |[0m 1:M 24 Dec 14:33:27.103 * 100 changes in 300 seconds. Saving...
+[36mredis_1     |[0m 1:M 24 Dec 14:33:27.103 * Background saving started by pid 16
+[36mredis_1     |[0m 16:C 24 Dec 14:33:27.116 * DB saved on disk
+[36mredis_1     |[0m 16:C 24 Dec 14:33:27.117 * RDB: 0 MB of memory used by copy-on-write
+[36mredis_1     |[0m 1:M 24 Dec 14:33:27.206 * Background saving terminated with success
+[36mredis_1     |[0m 1:M 24 Dec 14:38:28.052 * 100 changes in 300 seconds. Saving...
+[36mredis_1     |[0m 1:M 24 Dec 14:38:28.055 * Background saving started by pid 17
+[36mredis_1     |[0m 17:C 24 Dec 14:38:28.069 * DB saved on disk
+[36mredis_1     |[0m 17:C 24 Dec 14:38:28.069 * RDB: 0 MB of memory used by copy-on-write
+[36mredis_1     |[0m 1:M 24 Dec 14:38:28.157 * Background saving terminated with success
+[36mredis_1     |[0m 1:M 24 Dec 14:43:29.074 * 100 changes in 300 seconds. Saving...
+[36mredis_1     |[0m 1:M 24 Dec 14:43:29.074 * Background saving started by pid 18
+[36mredis_1     |[0m 18:C 24 Dec 14:43:29.089 * DB saved on disk
+[36mredis_1     |[0m 18:C 24 Dec 14:43:29.089 * RDB: 0 MB of memory used by copy-on-write
+[36mredis_1     |[0m 1:M 24 Dec 14:43:29.180 * Background saving terminated with success
+[36mredis_1     |[0m 1:M 24 Dec 14:48:30.025 * 100 changes in 300 seconds. Saving...
+[36mredis_1     |[0m 1:M 24 Dec 14:48:30.025 * Background saving started by pid 19
+[36mredis_1     |[0m 19:C 24 Dec 14:48:30.045 * DB saved on disk
+[36mredis_1     |[0m 19:C 24 Dec 14:48:30.046 * RDB: 0 MB of memory used by copy-on-write
+[36mredis_1     |[0m 1:M 24 Dec 14:48:30.129 * Background saving terminated with success
+[36mredis_1     |[0m 1:M 24 Dec 14:53:31.065 * 100 changes in 300 seconds. Saving...
+[36mredis_1     |[0m 1:M 24 Dec 14:53:31.065 * Background saving started by pid 20
+[36mredis_1     |[0m 20:C 24 Dec 14:53:31.080 * DB saved on disk
+[36mredis_1     |[0m 20:C 24 Dec 14:53:31.080 * RDB: 0 MB of memory used by copy-on-write
+[36mredis_1     |[0m 1:M 24 Dec 14:53:31.172 * Background saving terminated with success
+[36mredis_1     |[0m 1:M 24 Dec 14:58:32.083 * 100 changes in 300 seconds. Saving...
+[36mredis_1     |[0m 1:M 24 Dec 14:58:32.085 * Background saving started by pid 21
+[36mredis_1     |[0m 21:C 24 Dec 14:58:32.089 * DB saved on disk
+[36mredis_1     |[0m 21:C 24 Dec 14:58:32.090 * RDB: 0 MB of memory used by copy-on-write
+[36mredis_1     |[0m 1:M 24 Dec 14:58:32.190 * Background saving terminated with success
