@@ -19,6 +19,13 @@ El proyecto fue construido usando:
 ## Steps
 
 #### Descargar el proyecto
+
+Clonar este repositorio en la maquina de desarrollo
+```
+$ git clone git@github.com:controlade/rails-on-docker.git
+$ cd rails-on-docker
+```
+
 Para que quedes con el proyecto en tu máquina, listo para iniciar edicion de codigo:
 
 ```$ docker run -it --rm -v "$PWD":/usr/src/app -w /usr/src/app rails:5 rails new --skip-bundle drkiq```
@@ -94,12 +101,25 @@ $ docker-compose up > docker-compose-run-2.txt
 ```
 
 ## Testing it out
-On a browser, go o http://localhost:8000/.
+```
+# start services, and leave their terminals open to see logs
+$ docker-compose up
+```
 
-You should be greeted with the typical Rails introduction page.
+Go to http://localhost:8000/ on web browser
+
+You should be greeted with the typical Rails introduction page, if not initialize database again.
+
+To stop the test, do ```control + C``` to stop containers
 
 ## Notes
 - To run Rails commands we need to prepend the following:
 
-```$ docker-­compose run drkiq rails [command, arguments and options]```
+```
+$ docker-­compose run drkiq rails [command, arguments and options]
+```
+For example:
+```
+docker-compose run drkiq rails console
+```
 

@@ -19,3 +19,5 @@
 .DStore
 
 .drkiq.env
+
+docker-compose-run-*

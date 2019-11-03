@@ -35,5 +35,5 @@ RUN bundle exec rake RAILS_ENV=production DATABASE_URL=postgresql://user:pass@12
 # Expose a volume so that nginx will be able to read in assets in production.
 VOLUME ["$INSTALL_PATH/public"]
 
-# The default command that gets ran will be to start the Unicorn server.
+# The default command that gets ran will be to start the Puma server.
 CMD bundle exec puma -C config/puma.rb
