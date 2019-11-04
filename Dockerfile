@@ -9,7 +9,7 @@ MAINTAINER Alberto Delgado <adelgado@controlade.com>
 # - nodejs: Compile assets
 # - libpq-dev: Communicate with postgres through the postgres gem
 # - postgresql-9.5: In case you want to talk directly to postgres
-RUN apt-get update && apt-get install -qq -y build-essential nodejs libpq-dev postgresql-9.5 --fix-missing --no-install-recommends
+RUN apt-get update && apt-get install -qq -y build-essential nodejs libpq-dev postgresql-9.5 postgresql-client --fix-missing --no-install-recommends
 
 # Set an environment variable to store where the app is installed to inside
 # of the Docker image.
